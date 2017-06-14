@@ -13,23 +13,23 @@ config = {
     production: {
         url: 'http://165.227.68.89/',
         mail: {
-	    transport: 'SMTP',
-	    options: {
-	        service: 'Gmail',
-		auth: {
-		    user: 'stl.cftp@gmail.com',
-		    pass: 'XXXXXXXXXX'
-		}
-	    }
-	},
+	        transport: 'SMTP',
+	        options: {
+	            service: 'Gmail',
+		        auth: {
+		            user: process.env.MAIL_USER,
+		            pass: process.env.MAIL_PASS
+		        }
+	        }
+	    },
         database: {
             client: 'mysql',
             connection: {
-		host: '127.0.0.1',
-		user: 'ghost',
-		password: 'XXXXXXXXXXX',
-		database: 'ghost',
-		charset: 'utf8'
+                host: '127.0.0.1',
+                user: process.env.DB_USER,
+                password: process.env.DB_PASS,
+                database: 'ghost',
+                charset: 'utf8'
             },
             debug: false
         },
@@ -69,9 +69,13 @@ config = {
         // #### Database
         // Ghost supports sqlite3 (default), MySQL & PostgreSQL
         database: {
-            client: 'sqlite3',
+            client: 'mysql',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost-dev.db')
+                host: '127.0.0.1',
+                user: process.env.DB_USER,
+                password: process.env.DB_PASS,
+                database: 'ghost',
+                charset: 'utf8'
             },
             debug: false
         },
