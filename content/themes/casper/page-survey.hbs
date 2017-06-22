@@ -1,0 +1,100 @@
+{{!< default}}
+
+{{!-- This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+
+<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+</header>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+
+<main class="content" role="main">
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <h1 class="post-title">Code for the People Survey</h1>
+        </div>
+      </div>
+      <br><br>
+
+
+    <div class="row" id="form_success">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <h1> Your form was successfully submitted </h1>
+        </div>
+    </div>
+
+    <div class="row" id="form_fail">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <h1> Unfortunately, we could not send your form</h1>
+            <h4> Feel free to reach out to us at stl.cftp@gmail.com </h4>
+        </div>
+    </div>
+
+    <div class="row" id="ctfp_form">
+      <div class="col-lg-2 col-md-2 col-sm-2"></div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div>
+        <div class="form-group">
+          <label for="example-text-input">Name</label>
+            <input class="form-control" type="text" placeholder="Carol Coder" id="name">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleTextarea">How did you hear about us?</label>
+          <textarea class="form-control" id="heard_of_us" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleTextarea">Would you like to get involved with CFTP? If you are an organization, would you like to partner with CFTP?</label>
+          <textarea class="form-control" id="want_to_accomplish" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit_survey" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<script>
+$("#submit_survey").on('click', function(){
+    email = $("#email").val()
+    name = $("#name").val()
+    heard_of_us = $("#heard_of_us").val()
+    want_to_accomplish = $("#want_to_accomplish").val()
+
+  $.post("http://codeforthepeople.io:3000",{
+      email: email,
+      name: name,
+      heard_of_us: heard_of_us,
+      want_to_accomplish: want_to_accomplish
+    }).done(function(){
+      $("#cftp_form").empty();
+      $("#form_success").show();
+    }).fail(function(err){
+      $("#cftp_form").empty();
+      $("#form_fail").show();
+    });
+  });
+</script>

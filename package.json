@@ -44,6 +44,7 @@
     "express": "4.15.0",
     "express-hbs": "1.0.4",
     "extract-zip-fork": "1.5.1",
+    "forever": "^0.15.3",
     "fs-extra": "2.1.2",
     "ghost-gql": "0.0.6",
     "glob": "5.0.15",
