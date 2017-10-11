@@ -16,4 +16,4 @@ And we might be able to do a thing, for St. Louis. Many cool things.
 #### Long Drives (version 1.++)
 - [ ] Ballot Initiatives Signup App
 - [ ] Continuous Integration with Travis
-
+- [ ] CFTP Logo for github, site favicon and marketing purposes
