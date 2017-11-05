@@ -1,0 +1,35 @@
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: posts ","time":"2017-11-05T03:19:17.317Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: users ","time":"2017-11-05T03:19:17.330Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: roles ","time":"2017-11-05T03:19:17.341Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: roles_users ","time":"2017-11-05T03:19:17.346Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: permissions ","time":"2017-11-05T03:19:17.349Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: permissions_users ","time":"2017-11-05T03:19:17.353Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: permissions_roles ","time":"2017-11-05T03:19:17.356Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: permissions_apps ","time":"2017-11-05T03:19:17.358Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: settings ","time":"2017-11-05T03:19:17.360Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: tags ","time":"2017-11-05T03:19:17.367Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: posts_tags ","time":"2017-11-05T03:19:17.372Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: apps ","time":"2017-11-05T03:19:17.376Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: app_settings ","time":"2017-11-05T03:19:17.381Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: app_fields ","time":"2017-11-05T03:19:17.390Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: clients ","time":"2017-11-05T03:19:17.398Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: client_trusted_domains ","time":"2017-11-05T03:19:17.401Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: accesstokens ","time":"2017-11-05T03:19:17.404Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: refreshtokens ","time":"2017-11-05T03:19:17.408Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: subscribers ","time":"2017-11-05T03:19:17.412Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: invites ","time":"2017-11-05T03:19:17.416Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Creating table: brute ","time":"2017-11-05T03:19:17.421Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Model: Post ","time":"2017-11-05T03:19:17.428Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Model: Tag ","time":"2017-11-05T03:19:17.748Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Model: Client ","time":"2017-11-05T03:19:17.766Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Model: Role ","time":"2017-11-05T03:19:17.796Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Model: Permission ","time":"2017-11-05T03:19:17.823Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Model: User ","time":"2017-11-05T03:19:18.183Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Relation: Role to Permission ","time":"2017-11-05T03:19:18.671Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Relation: Post to Tag ","time":"2017-11-05T03:19:18.981Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14421,"level":30,"msg":"Relation: User to Role ","time":"2017-11-05T03:19:19.037Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14427,"level":30,"msg":"Ghost is running in development... ","time":"2017-11-05T03:19:23.157Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14427,"level":30,"msg":"Listening on: 127.0.0.1:2368 ","time":"2017-11-05T03:19:23.159Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14427,"level":30,"msg":"Url configured as: http://localhost:2368/ ","time":"2017-11-05T03:19:23.160Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14427,"level":30,"msg":"Ctrl+C to shut down ","time":"2017-11-05T03:19:23.160Z","v":0}
+{"name":"Log","hostname":"rmoore-paradowski.local","pid":14427,"level":30,"msg":"Ghost boot 2.493s ","time":"2017-11-05T03:19:23.163Z","v":0}
